@@ -12,6 +12,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+  presets: [require('nativewind/preset')],
   theme: {
     extend: {
       fontFamily: {
@@ -88,6 +89,10 @@ module.exports = {
           600: '#E6F3FF',
           700: '#EBEBEB',
           800: '#ADADAD',
+        },
+        dots: {
+          background: '#E2E8F0',
+          'background-active': '#0286FF',
         },
       },
     },
